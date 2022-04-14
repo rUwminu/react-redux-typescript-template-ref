@@ -14,7 +14,7 @@ import { WebSocketLink } from '@apollo/client/link/ws'
 import { getMainDefinition } from '@apollo/client/utilities'
 
 // Compoents
-import { TodoApp, StoreHome } from './components/index'
+import { TodoApp, StoreHome, PageTransitionFM } from './components/index'
 
 const App: React.FC = () => {
   const httpLink = new HttpLink({
@@ -57,7 +57,7 @@ const App: React.FC = () => {
     <ApolloProvider client={client}>
       <ReduxProvider store={store}>
         <MainContainer className='App'>
-          <StoreHome />
+          <PageTransitionFM />
         </MainContainer>
       </ReduxProvider>
     </ApolloProvider>
