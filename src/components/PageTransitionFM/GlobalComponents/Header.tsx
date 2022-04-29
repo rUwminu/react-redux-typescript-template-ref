@@ -30,6 +30,7 @@ const NavContainer = styled.div`
     items-center
     justify-center
     w-full
+    z-30
   `}
 
   .inner-container {
@@ -37,6 +38,8 @@ const NavContainer = styled.div`
         flex
         items-center
         justify-between
+        px-6
+        lg:px-0
         py-2
         w-full
         max-w-6xl
@@ -57,7 +60,7 @@ const NavContainer = styled.div`
 
       .nav-items {
         ${tw`
-            px-4
+            pl-6
             font-semibold
             text-gray-700
         `}

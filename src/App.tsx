@@ -72,7 +72,6 @@ const MainContainer = styled.div`
     px-6
     lg:px-0
     w-screen
-    h-screen
   `}
 `
 
